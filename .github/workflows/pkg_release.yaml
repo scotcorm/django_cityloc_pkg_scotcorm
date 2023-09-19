@@ -1,8 +1,11 @@
 name: Learn Github Packaging
 on: [push]
 jobs:
+  version:2
   build:
-    runs-on: ubuntu-latest
+    os: "ubuntu-22.04"
+    tools:
+      python: "3.11"
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
